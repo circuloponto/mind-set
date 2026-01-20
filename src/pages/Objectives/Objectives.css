@@ -1,0 +1,197 @@
+/* ============================================
+   Objectives Page - Modern Professional Design
+   ============================================ */
+
+.objectives-page {
+  overflow-x: hidden;
+}
+
+/* Page Hero */
+.objectives-page .page-hero {
+  position: relative;
+  background: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-secondary-light) 50%, var(--color-primary-darker) 100%);
+  color: #ffffff;
+  padding: var(--space-24) var(--space-6) var(--space-16);
+  text-align: center;
+  overflow: hidden;
+}
+
+.objectives-page .page-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: 
+    radial-gradient(circle at 20% 80%, rgba(70, 204, 206, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(70, 204, 206, 0.1) 0%, transparent 40%);
+}
+
+.objectives-page .page-hero .container {
+  position: relative;
+  max-width: var(--container-lg);
+}
+
+.objectives-page .page-title {
+  font-family: var(--font-display);
+  font-size: var(--text-5xl);
+  font-weight: 800;
+  margin: 0 0 var(--space-5);
+  letter-spacing: var(--tracking-tight);
+  line-height: var(--leading-tight);
+  color: #ffffff;
+}
+
+.objectives-page .page-subtitle {
+  font-size: var(--text-lg);
+  margin: 0 auto;
+  max-width: 600px;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: var(--leading-relaxed);
+}
+
+/* Sections */
+.objectives-page .section {
+  padding: var(--space-20) var(--space-6);
+}
+
+.objectives-page .section-alt {
+  background: var(--color-background-alt);
+}
+
+.objectives-page .container {
+  max-width: var(--container-lg);
+  margin: 0 auto;
+}
+
+.objectives-page .section-heading {
+  font-family: var(--font-display);
+  font-size: var(--text-3xl);
+  font-weight: 700;
+  color: var(--color-dark);
+  margin: 0 0 var(--space-8);
+  letter-spacing: var(--tracking-tight);
+}
+
+/* Content Block */
+.objectives-page .content-block p {
+  font-size: var(--text-lg);
+  line-height: var(--leading-loose);
+  color: var(--color-text);
+  margin: 0;
+}
+
+/* Objectives Grid */
+.objectives-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: var(--space-6);
+}
+
+.objective-card {
+  background: var(--color-surface);
+  padding: var(--space-8);
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--color-border);
+  position: relative;
+  transition: all var(--transition-base);
+}
+
+.objective-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: var(--color-primary);
+  border-radius: var(--radius-xl) 0 0 var(--radius-xl);
+}
+
+.objective-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--color-primary-light);
+}
+
+.objective-number {
+  font-family: var(--font-display);
+  font-size: var(--text-4xl);
+  font-weight: 800;
+  color: var(--color-primary);
+  opacity: 0.15;
+  margin-bottom: var(--space-3);
+  line-height: 1;
+}
+
+.objective-card h3 {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  font-weight: 600;
+  color: var(--color-dark);
+  margin: 0 0 var(--space-4);
+  line-height: var(--leading-snug);
+}
+
+.objective-card p {
+  font-size: var(--text-base);
+  line-height: var(--leading-relaxed);
+  color: var(--color-text-light);
+  margin: 0;
+}
+
+/* Impact Section */
+.impact-content p {
+  font-size: var(--text-lg);
+  line-height: var(--leading-loose);
+  color: var(--color-text);
+  margin: 0 0 var(--space-5);
+}
+
+.impact-content p:last-child {
+  margin-bottom: 0;
+}
+
+/* Responsive */
+@media (max-width: 1023px) {
+  .objectives-page .page-title {
+    font-size: var(--text-4xl);
+  }
+
+  .objectives-page .section-heading {
+    font-size: var(--text-2xl);
+  }
+
+  .objectives-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .objectives-page .page-hero {
+    padding: var(--space-16) var(--space-4) var(--space-12);
+  }
+
+  .objectives-page .page-title {
+    font-size: var(--text-3xl);
+  }
+
+  .objectives-page .page-subtitle {
+    font-size: var(--text-base);
+  }
+
+  .objectives-page .section {
+    padding: var(--space-16) var(--space-4);
+  }
+
+  .objectives-page .section-heading {
+    font-size: var(--text-xl);
+    margin-bottom: var(--space-6);
+  }
+
+  .objective-card {
+    padding: var(--space-6);
+  }
+
+  .objective-number {
+    font-size: var(--text-3xl);
+  }
+}

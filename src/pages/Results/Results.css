@@ -1,0 +1,257 @@
+/* Page Hero */
+.page-hero {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+  color: #ffffff;
+  padding: 4rem 1.5rem;
+  text-align: center;
+}
+
+.page-title {
+  font-size: 2.75rem;
+  font-weight: 700;
+  margin: 0 0 0.75rem;
+}
+
+.page-subtitle {
+  font-size: 1.25rem;
+  opacity: 0.95;
+  margin: 0;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Sections */
+.section {
+  padding: 4rem 1.5rem;
+}
+
+.section-alt {
+  background-color: #f8f9fa;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.section-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-dark);
+  margin: 0 0 1rem;
+  position: relative;
+  padding-bottom: 0.75rem;
+}
+
+.section-heading::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  background-color: var(--color-primary);
+  border-radius: 2px;
+}
+
+.intro-text {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--color-text);
+  margin: 0 0 2rem;
+  max-width: 800px;
+}
+
+/* Results Grid */
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.result-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  border-top: 4px solid var(--color-primary);
+}
+
+.result-header {
+  margin-bottom: 0.75rem;
+}
+
+.result-status {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+}
+
+.result-status-completed {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+.result-status-in-progress {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.result-status-planned {
+  background-color: var(--color-primary-light);
+  color: var(--color-primary);
+}
+
+.result-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-dark);
+  margin: 0 0 0.75rem;
+}
+
+.result-description {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--color-text-light);
+  margin: 0 0 1rem;
+}
+
+.deliverables-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-dark);
+  margin: 0 0 0.5rem;
+}
+
+.deliverables-list {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.deliverables-list li {
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: var(--color-text-light);
+  margin-bottom: 0.25rem;
+}
+
+/* Impact Grid */
+.impact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.impact-card {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  text-align: center;
+}
+
+.impact-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.impact-card h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--color-dark);
+  margin: 0 0 1rem;
+}
+
+.impact-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.impact-card li {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--color-text-light);
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.impact-card li:last-child {
+  border-bottom: none;
+}
+
+/* Dissemination */
+.dissemination-content > p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--color-text);
+  margin: 0 0 2rem;
+}
+
+.dissemination-channels {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.channel {
+  padding: 1.5rem;
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  border-left: 4px solid var(--color-primary);
+}
+
+.channel h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-dark);
+  margin: 0 0 0.5rem;
+}
+
+.channel p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--color-text-light);
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 1023px) {
+  .results-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .impact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dissemination-channels {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .page-hero {
+    padding: 3rem 1rem;
+  }
+
+  .page-title {
+    font-size: 2rem;
+  }
+
+  .section {
+    padding: 3rem 1rem;
+  }
+
+  .section-heading {
+    font-size: 1.5rem;
+  }
+
+  .dissemination-channels {
+    grid-template-columns: 1fr;
+  }
+}
