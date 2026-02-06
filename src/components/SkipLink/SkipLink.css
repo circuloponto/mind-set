@@ -3,18 +3,19 @@
   top: -100%;
   left: 50%;
   transform: translateX(-50%);
-  background-color: var(--color-primary);
-  color: #ffffff;
-  padding: 0.75rem 1.5rem;
+  background: var(--teal-400);
+  color: var(--slate-950);
+  padding: var(--space-3) var(--space-6);
   text-decoration: none;
   font-weight: 600;
-  border-radius: 0 0 0.5rem 0.5rem;
+  font-size: var(--text-sm);
+  border-radius: 0 0 var(--radius-md) var(--radius-md);
   z-index: 10000;
-  transition: top 0.2s ease;
+  transition: top 200ms var(--ease-out);
 }
 
 .skip-link:focus {
   top: 0;
-  outline: 3px solid var(--color-accent);
+  outline: 2px solid var(--teal-600);
   outline-offset: 2px;
 }

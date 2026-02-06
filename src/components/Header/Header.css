@@ -1,33 +1,35 @@
 /* ============================================
-   Header - Modern Professional Design
+   Header
    ============================================ */
 
 .header {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid transparent;
   transition: all var(--transition-base);
-  overflow-x: clip;
 }
 
 .header--scrolled {
-  background: rgba(255, 255, 255, 0.98);
-  box-shadow: 0 1px 0 var(--color-border), var(--shadow-sm);
+  border-bottom-color: var(--color-border);
+  box-shadow: var(--shadow-sm);
 }
 
 .header__container {
   max-width: var(--container-xl);
   margin: 0 auto;
-  padding: var(--space-4) var(--space-6);
+  padding: 0 var(--space-6);
+  height: 64px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: var(--space-8);
+  gap: var(--space-6);
 }
 
+/* Logo */
 .header__logo-link {
   display: flex;
   align-items: center;
@@ -36,19 +38,19 @@
 }
 
 .header__logo-link:hover {
-  opacity: 0.85;
+  opacity: 0.8;
 }
 
 .header__logo {
-  height: 40px;
+  height: 32px;
   width: auto;
 }
 
-/* Navigation */
+/* Nav */
 .header__nav {
   display: flex;
   align-items: center;
-  gap: var(--space-2);
+  gap: var(--space-1);
   flex: 1;
   justify-content: center;
 }
@@ -57,7 +59,7 @@
   display: flex;
   align-items: center;
   list-style: none;
-  gap: var(--space-1);
+  gap: 0;
   flex-wrap: nowrap;
 }
 
@@ -70,40 +72,25 @@
   display: flex;
   align-items: center;
   padding: var(--space-2) var(--space-3);
-  color: var(--color-text);
+  color: var(--color-text-muted);
   font-size: var(--text-sm);
   font-weight: 500;
   text-decoration: none;
   border-radius: var(--radius-md);
-  transition: all var(--transition-fast);
-  position: relative;
+  transition: color var(--transition-fast);
   white-space: nowrap;
 }
 
 .header__nav-link:hover {
-  color: var(--color-primary-dark);
-  background: var(--color-primary-50);
+  color: var(--color-text-strong);
 }
 
 .header__nav-link--active {
-  color: var(--color-primary-dark);
-  background: var(--color-primary-lighter);
+  color: var(--color-text-strong);
   font-weight: 600;
 }
 
-.header__nav-link--active::after {
-  content: '';
-  position: absolute;
-  bottom: 4px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 20px;
-  height: 3px;
-  background: var(--color-primary);
-  border-radius: var(--radius-full);
-}
-
-/* Language Switcher in Nav */
+/* Language in nav */
 .header__language {
   display: flex;
   align-items: center;
@@ -112,7 +99,7 @@
   border-left: 1px solid var(--color-border);
 }
 
-/* Actions (mobile language + menu button) */
+/* Actions */
 .header__actions {
   display: flex;
   align-items: center;
@@ -128,39 +115,31 @@
   display: none;
   align-items: center;
   justify-content: center;
-  width: 44px;
-  height: 44px;
-  color: var(--color-secondary);
+  width: 40px;
+  height: 40px;
+  color: var(--color-text-strong);
   border-radius: var(--radius-md);
-  transition: all var(--transition-fast);
+  transition: background var(--transition-fast);
 }
 
 .header__menu-btn:hover {
-  background: var(--color-background-alt);
-  color: var(--color-primary-dark);
+  background: var(--color-bg-alt);
 }
 
-.header__menu-btn--open {
-  background: var(--color-primary-lighter);
-  color: var(--color-primary-dark);
-}
-
-/* Mobile Overlay */
+/* Overlay */
 .header__overlay {
   display: none;
 }
 
-/* Close button inside nav (hidden on desktop) */
 .header__nav-close {
   display: none;
 }
 
-/* ============================================
-   Mobile Styles
-   ============================================ */
+/* ── Mobile ── */
 @media (max-width: 1023px) {
   .header__container {
-    padding: var(--space-3) var(--space-4);
+    padding: 0 var(--space-4);
+    height: 56px;
   }
 
   .header__menu-btn {
@@ -182,16 +161,15 @@
     position: absolute;
     top: var(--space-4);
     right: var(--space-4);
-    width: 44px;
-    height: 44px;
+    width: 40px;
+    height: 40px;
     color: var(--color-text);
     border-radius: var(--radius-md);
-    transition: all var(--transition-fast);
+    transition: background var(--transition-fast);
   }
 
   .header__nav-close:hover {
-    background: var(--color-background-alt);
-    color: var(--color-primary-dark);
+    background: var(--color-bg-alt);
   }
 
   .header__nav {
@@ -199,18 +177,17 @@
     top: 0;
     right: 0;
     width: 100%;
-    max-width: 360px;
-    height: 100vh;
+    max-width: 340px;
     height: 100dvh;
-    background: var(--color-background);
+    background: var(--color-bg);
     flex-direction: column;
     justify-content: flex-start;
     align-items: stretch;
     padding: var(--space-20) var(--space-6) var(--space-8);
     gap: var(--space-6);
     transform: translateX(100%);
-    transition: transform var(--transition-slow);
-    box-shadow: var(--shadow-2xl);
+    transition: transform 300ms var(--ease-out);
+    box-shadow: var(--shadow-xl);
     overflow-y: auto;
   }
 
@@ -225,33 +202,34 @@
   }
 
   .header__nav-link {
-    padding: var(--space-4) var(--space-4);
+    padding: var(--space-3) var(--space-4);
     font-size: var(--text-base);
     border-radius: var(--radius-lg);
+    color: var(--color-text);
   }
 
-  .header__nav-link--active::after {
-    display: none;
+  .header__nav-link:hover {
+    background: var(--color-bg-alt);
   }
 
   .header__nav-link--active {
-    background: var(--color-primary);
-    color: white;
+    background: var(--teal-50);
+    color: var(--teal-600);
+    font-weight: 600;
   }
 
   .header__nav-link--active:hover {
-    background: var(--color-primary-dark);
-    color: white;
+    background: var(--teal-100);
   }
 
   .header__overlay {
     display: block;
     position: fixed;
     inset: 0;
-    background: rgba(15, 23, 42, 0.4);
-    backdrop-filter: blur(4px);
+    background: rgba(12, 18, 32, 0.3);
+    backdrop-filter: blur(2px);
     z-index: -1;
-    animation: fadeIn 0.3s ease;
+    animation: fadeIn 200ms ease;
   }
 
   @keyframes fadeIn {
@@ -262,7 +240,7 @@
 
 @media (max-width: 480px) {
   .header__logo {
-    height: 36px;
+    height: 28px;
   }
 
   .header__nav {

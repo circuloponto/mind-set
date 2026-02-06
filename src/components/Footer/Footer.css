@@ -1,10 +1,10 @@
 /* ============================================
-   Footer - Modern Professional Design
+   Footer
    ============================================ */
 
 .footer {
-  background: var(--color-secondary);
-  color: #ffffff;
+  background: var(--slate-950);
+  color: #FFFFFF;
   margin-top: auto;
 }
 
@@ -14,20 +14,20 @@
   padding: 0 var(--space-6);
 }
 
-/* Footer Grid */
+/* Grid */
 .footer__grid {
   display: grid;
   grid-template-columns: 1.5fr 1fr 1fr 1fr;
-  gap: var(--space-12);
+  gap: var(--space-10);
   padding: var(--space-16) 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 
-/* Brand Section */
+/* Brand */
 .footer__brand {
   display: flex;
   flex-direction: column;
-  gap: var(--space-5);
+  gap: var(--space-4);
 }
 
 .footer__logo-link {
@@ -36,34 +36,34 @@
 }
 
 .footer__logo-link:hover {
-  opacity: 0.8;
+  opacity: 0.7;
 }
 
 .footer__logo {
-  height: 36px;
+  height: 28px;
   width: auto;
   filter: brightness(0) invert(1);
 }
 
 .footer__description {
-  color: rgba(255, 255, 255, 0.65);
+  color: var(--slate-500);
   font-size: var(--text-sm);
   line-height: var(--leading-relaxed);
-  max-width: 280px;
+  max-width: 260px;
 }
 
-/* Footer Sections */
+/* Sections */
 .footer__section {
   display: flex;
   flex-direction: column;
-  gap: var(--space-5);
+  gap: var(--space-4);
 }
 
 .footer__heading {
   font-family: var(--font-sans);
   font-size: var(--text-xs);
   font-weight: 600;
-  color: rgba(255, 255, 255, 0.4);
+  color: var(--slate-500);
   text-transform: uppercase;
   letter-spacing: 0.1em;
 }
@@ -79,9 +79,9 @@
   display: inline-flex;
   align-items: center;
   gap: var(--space-2);
-  color: rgba(255, 255, 255, 0.75);
+  color: var(--slate-400);
   font-size: var(--text-sm);
-  transition: all var(--transition-fast);
+  transition: color var(--transition-fast);
 }
 
 .footer__link svg {
@@ -91,7 +91,7 @@
 }
 
 .footer__link:hover {
-  color: var(--color-primary-light);
+  color: var(--teal-300);
 }
 
 .footer__link:hover svg {
@@ -108,51 +108,52 @@
   display: inline-flex;
   align-items: center;
   gap: var(--space-3);
-  color: rgba(255, 255, 255, 0.75);
+  color: var(--slate-400);
   font-size: var(--text-sm);
   padding: var(--space-3) var(--space-4);
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
   border-radius: var(--radius-md);
   transition: all var(--transition-fast);
 }
 
 .footer__contact-link:hover {
-  background: rgba(255, 255, 255, 0.1);
-  color: var(--color-primary-light);
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--teal-300);
 }
 
-/* EU Funding Section */
+/* EU */
 .footer__eu {
-  padding: var(--space-8) 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: var(--space-6) 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .footer__eu-content {
   display: flex;
   align-items: flex-start;
-  gap: var(--space-6);
-  padding: var(--space-6);
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.06);
+  gap: var(--space-5);
+  padding: var(--space-5);
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.04);
   border-radius: var(--radius-lg);
 }
 
 .footer__eu-flag {
-  width: 56px;
+  width: 48px;
   height: auto;
   flex-shrink: 0;
   border-radius: var(--radius-sm);
 }
 
 .footer__eu-text {
-  color: rgba(255, 255, 255, 0.55);
+  color: var(--slate-500);
   font-size: var(--text-xs);
   line-height: var(--leading-relaxed);
 }
 
-/* Footer Bottom */
+/* Bottom */
 .footer__bottom {
-  padding: var(--space-6) 0;
+  padding: var(--space-5) 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -162,17 +163,15 @@
 
 .footer__copyright,
 .footer__erasmus {
-  color: rgba(255, 255, 255, 0.4);
+  color: var(--slate-600);
   font-size: var(--text-xs);
 }
 
-/* ============================================
-   Responsive
-   ============================================ */
+/* ── Responsive ── */
 @media (max-width: 1023px) {
   .footer__grid {
     grid-template-columns: 1fr 1fr;
-    gap: var(--space-10);
+    gap: var(--space-8);
   }
 
   .footer__brand {
@@ -187,7 +186,7 @@
 
   .footer__grid {
     grid-template-columns: 1fr;
-    gap: var(--space-8);
+    gap: var(--space-6);
     padding: var(--space-12) 0;
   }
 
@@ -203,7 +202,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: var(--space-5);
+    padding: var(--space-4);
   }
 
   .footer__bottom {

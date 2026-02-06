@@ -1,24 +1,44 @@
+/* ============================================
+   Privacy / Legal Pages
+   ============================================ */
+
 .page-hero {
-  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
-  color: #ffffff;
-  padding: 4rem 1.5rem;
-  text-align: center;
+  position: relative;
+  background: var(--slate-950);
+  color: #FFFFFF;
+  padding: var(--space-24) var(--space-6) var(--space-16);
+  overflow: hidden;
+}
+
+.page-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 15% 85%, rgba(70, 204, 206, 0.1) 0%, transparent 45%);
+}
+
+.page-hero .container {
+  position: relative;
 }
 
 .page-title {
-  font-size: 2.75rem;
-  font-weight: 700;
-  margin: 0 0 0.75rem;
+  font-family: var(--font-display);
+  font-size: var(--text-5xl);
+  font-weight: 800;
+  margin: 0 0 var(--space-4);
+  letter-spacing: -0.03em;
+  color: #FFFFFF;
 }
 
 .page-subtitle {
-  font-size: 1.25rem;
-  opacity: 0.95;
+  font-size: var(--text-lg);
   margin: 0;
+  color: var(--slate-400);
 }
 
 .section {
-  padding: 4rem 1.5rem;
+  padding: var(--space-20) var(--space-6);
 }
 
 .container {
@@ -27,76 +47,64 @@
 }
 
 .legal-content {
-  line-height: 1.8;
+  line-height: var(--leading-loose);
 }
 
 .last-updated {
-  font-size: 0.9rem;
-  color: var(--color-text-light);
-  margin-bottom: 2rem;
-  padding-bottom: 1rem;
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-8);
+  padding-bottom: var(--space-4);
   border-bottom: 1px solid var(--color-border);
 }
 
 .legal-content h2 {
-  font-size: 1.5rem;
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
   font-weight: 700;
-  color: var(--color-dark);
-  margin: 2rem 0 1rem;
+  color: var(--color-text-strong);
+  margin: var(--space-10) 0 var(--space-4);
 }
 
 .legal-content h3 {
-  font-size: 1.15rem;
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
   font-weight: 600;
-  color: var(--color-dark);
-  margin: 1.5rem 0 0.75rem;
+  color: var(--color-text-strong);
+  margin: var(--space-6) 0 var(--space-3);
 }
 
 .legal-content p {
-  font-size: 1rem;
+  font-size: var(--text-base);
   color: var(--color-text);
-  margin: 0 0 1rem;
+  margin: 0 0 var(--space-4);
 }
 
 .legal-content ul {
-  margin: 0 0 1rem;
-  padding-left: 1.5rem;
+  margin: 0 0 var(--space-4);
+  padding-left: var(--space-6);
 }
 
 .legal-content li {
-  font-size: 1rem;
+  font-size: var(--text-base);
   color: var(--color-text);
-  margin-bottom: 0.5rem;
+  margin-bottom: var(--space-2);
 }
 
 .legal-content a {
-  color: var(--color-primary);
+  color: var(--teal-500);
   text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 .legal-content a:hover {
-  color: var(--color-primary-dark);
+  color: var(--teal-600);
 }
 
-.legal-content a:focus {
-  outline: 2px solid var(--color-primary);
-  outline-offset: 2px;
-}
-
+/* Responsive */
 @media (max-width: 640px) {
-  .page-hero {
-    padding: 3rem 1rem;
-  }
-
-  .page-title {
-    font-size: 2rem;
-  }
-
-  .section {
-    padding: 3rem 1rem;
-  }
-
-  .legal-content h2 {
-    font-size: 1.25rem;
-  }
+  .page-hero { padding: var(--space-16) var(--space-4) var(--space-12); }
+  .page-title { font-size: var(--text-3xl); }
+  .section { padding: var(--space-16) var(--space-4); }
+  .legal-content h2 { font-size: var(--text-xl); }
 }

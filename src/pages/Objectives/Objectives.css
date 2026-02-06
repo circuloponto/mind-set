@@ -1,18 +1,17 @@
 /* ============================================
-   Objectives Page - Modern Professional Design
+   Objectives Page
    ============================================ */
 
 .objectives-page {
   overflow-x: hidden;
 }
 
-/* Page Hero */
+/* Hero */
 .objectives-page .page-hero {
   position: relative;
-  background: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-secondary-light) 50%, var(--color-primary-darker) 100%);
-  color: #ffffff;
+  background: var(--slate-950);
+  color: #FFFFFF;
   padding: var(--space-24) var(--space-6) var(--space-16);
-  text-align: center;
   overflow: hidden;
 }
 
@@ -20,9 +19,9 @@
   content: '';
   position: absolute;
   inset: 0;
-  background: 
-    radial-gradient(circle at 20% 80%, rgba(70, 204, 206, 0.15) 0%, transparent 50%),
-    radial-gradient(circle at 80% 20%, rgba(70, 204, 206, 0.1) 0%, transparent 40%);
+  background:
+    radial-gradient(circle at 15% 85%, rgba(70, 204, 206, 0.1) 0%, transparent 45%),
+    radial-gradient(circle at 80% 20%, rgba(70, 204, 206, 0.05) 0%, transparent 35%);
 }
 
 .objectives-page .page-hero .container {
@@ -34,17 +33,17 @@
   font-family: var(--font-display);
   font-size: var(--text-5xl);
   font-weight: 800;
-  margin: 0 0 var(--space-5);
-  letter-spacing: var(--tracking-tight);
+  margin: 0 0 var(--space-4);
+  letter-spacing: -0.03em;
   line-height: var(--leading-tight);
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .objectives-page .page-subtitle {
   font-size: var(--text-lg);
-  margin: 0 auto;
-  max-width: 600px;
-  color: rgba(255, 255, 255, 0.75);
+  margin: 0;
+  max-width: 560px;
+  color: var(--slate-400);
   line-height: var(--leading-relaxed);
 }
 
@@ -54,7 +53,7 @@
 }
 
 .objectives-page .section-alt {
-  background: var(--color-background-alt);
+  background: var(--color-bg-alt);
 }
 
 .objectives-page .container {
@@ -66,8 +65,8 @@
   font-family: var(--font-display);
   font-size: var(--text-3xl);
   font-weight: 700;
-  color: var(--color-dark);
-  margin: 0 0 var(--space-8);
+  color: var(--color-text-strong);
+  margin: 0 0 var(--space-6);
   letter-spacing: var(--tracking-tight);
 }
 
@@ -82,68 +81,54 @@
 /* Objectives Grid */
 .objectives-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: var(--space-6);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-5);
 }
 
 .objective-card {
-  background: var(--color-surface);
+  background: var(--color-bg);
   padding: var(--space-8);
   border-radius: var(--radius-xl);
   border: 1px solid var(--color-border);
   position: relative;
-  transition: all var(--transition-base);
-}
-
-.objective-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 4px;
-  height: 100%;
-  background: var(--color-primary);
-  border-radius: var(--radius-xl) 0 0 var(--radius-xl);
+  transition: border-color var(--transition-base);
 }
 
 .objective-card:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-lg);
-  border-color: var(--color-primary-light);
+  border-color: var(--teal-200);
 }
 
 .objective-number {
   font-family: var(--font-display);
   font-size: var(--text-4xl);
   font-weight: 800;
-  color: var(--color-primary);
-  opacity: 0.15;
+  color: var(--teal-200);
   margin-bottom: var(--space-3);
   line-height: 1;
 }
 
 .objective-card h3 {
   font-family: var(--font-display);
-  font-size: var(--text-xl);
+  font-size: var(--text-lg);
   font-weight: 600;
-  color: var(--color-dark);
-  margin: 0 0 var(--space-4);
+  color: var(--color-text-strong);
+  margin: 0 0 var(--space-3);
   line-height: var(--leading-snug);
 }
 
 .objective-card p {
-  font-size: var(--text-base);
+  font-size: var(--text-sm);
   line-height: var(--leading-relaxed);
-  color: var(--color-text-light);
+  color: var(--color-text-muted);
   margin: 0;
 }
 
-/* Impact Section */
+/* Impact */
 .impact-content p {
-  font-size: var(--text-lg);
+  font-size: var(--text-base);
   line-height: var(--leading-loose);
   color: var(--color-text);
-  margin: 0 0 var(--space-5);
+  margin: 0 0 var(--space-4);
 }
 
 .impact-content p:last-child {
@@ -174,17 +159,12 @@
     font-size: var(--text-3xl);
   }
 
-  .objectives-page .page-subtitle {
-    font-size: var(--text-base);
-  }
-
   .objectives-page .section {
     padding: var(--space-16) var(--space-4);
   }
 
   .objectives-page .section-heading {
     font-size: var(--text-xl);
-    margin-bottom: var(--space-6);
   }
 
   .objective-card {
