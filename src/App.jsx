@@ -17,6 +17,7 @@ import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 import './App.css';
 
 function App() {
+  console.log("[v0] App component rendering");
   return (
     <Router>
       <ScrollToTop />

@@ -14,6 +14,7 @@ import {
 import './Home.css';
 
 const Home = () => {
+  console.log("[v0] Home component rendering");
   const { t } = useTranslation();
 
   const features = [

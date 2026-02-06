@@ -5,6 +5,7 @@ import SkipLink from '../SkipLink/SkipLink';
 import './Layout.css';
 
 const Layout = () => {
+  console.log("[v0] Layout component rendering");
   return (
     <div className="layout">
       <SkipLink />
