@@ -11,6 +11,9 @@
     "contacts": "Contactos"
   },
   "home": {
+    "heroBadge": "Projeto Erasmus+",
+    "aboutLabel": "O Que Fazemos",
+    "objectivesLabel": "Os Nossos Objetivos",
     "heroTitle": "Capacitar Profissionais. Apoiar Empregadores. Promover a Inclusão em Saúde Mental.",
     "heroSubtitle": "O MIND-SET reforça o modelo de Emprego Apoiado através do Emprego Apoiado Aumentado, integrando intervenções orientadas para a saúde mental que apoiam tanto a colocação profissional como a sustentabilidade do emprego a longo prazo.",
     "exploreActivities": "Explorar Atividades",

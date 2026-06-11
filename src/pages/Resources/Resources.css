@@ -90,7 +90,7 @@
 }
 
 .resource-icon {
-  font-size: 2.5rem;
+  color: var(--color-primary-dark);
   margin-bottom: 1rem;
 }
 

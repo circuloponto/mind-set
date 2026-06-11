@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { UserPlus, FileText, BookOpen, Users } from 'lucide-react';
 import './Programme.css';
 
 const Programme = () => {
@@ -112,12 +113,7 @@ const Programme = () => {
           <div className="steps-container">
             <div className="step">
               <div className="step-icon" aria-hidden="true">
-                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                  <circle cx="8.5" cy="7" r="4"></circle>
-                  <line x1="20" y1="8" x2="20" y2="14"></line>
-                  <line x1="23" y1="11" x2="17" y2="11"></line>
-                </svg>
+                <UserPlus size={28} />
               </div>
               <h3>Register</h3>
               <p>Create your free account to access all programme resources</p>
@@ -125,12 +121,7 @@ const Programme = () => {
             <div className="step-connector" aria-hidden="true"></div>
             <div className="step">
               <div className="step-icon" aria-hidden="true">
-                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-                  <polyline points="14 2 14 8 20 8"></polyline>
-                  <line x1="16" y1="13" x2="8" y2="13"></line>
-                  <line x1="16" y1="17" x2="8" y2="17"></line>
-                </svg>
+                <FileText size={28} />
               </div>
               <h3>Assess</h3>
               <p>Complete the self-assessment to identify your learning needs</p>
@@ -138,10 +129,7 @@ const Programme = () => {
             <div className="step-connector" aria-hidden="true"></div>
             <div className="step">
               <div className="step-icon" aria-hidden="true">
-                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
-                  <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
-                </svg>
+                <BookOpen size={28} />
               </div>
               <h3>Learn</h3>
               <p>Work through the e-manual at your own pace</p>
@@ -149,12 +137,7 @@ const Programme = () => {
             <div className="step-connector" aria-hidden="true"></div>
             <div className="step">
               <div className="step-icon" aria-hidden="true">
-                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                  <circle cx="9" cy="7" r="4"></circle>
-                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                </svg>
+                <Users size={28} />
               </div>
               <h3>Connect</h3>
               <p>Join the community and share experiences with peers</p>

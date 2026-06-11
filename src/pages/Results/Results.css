@@ -154,7 +154,7 @@
 }
 
 .impact-icon {
-  font-size: 2.5rem;
+  color: var(--color-primary-dark);
   margin-bottom: 1rem;
 }
 
@@ -162,7 +162,14 @@
   font-size: 1.15rem;
   font-weight: 600;
   color: var(--color-dark);
-  margin: 0 0 1rem;
+  margin: 0 0 0.75rem;
+}
+
+.impact-card p {
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: var(--color-text-light);
+  margin: 0;
 }
 
 .impact-card ul {

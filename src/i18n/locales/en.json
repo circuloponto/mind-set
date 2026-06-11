@@ -11,6 +11,9 @@
     "contacts": "Contacts"
   },
   "home": {
+    "heroBadge": "Erasmus+ Project",
+    "aboutLabel": "What We Do",
+    "objectivesLabel": "Our Goals",
     "heroTitle": "Strengthening Professionals. Supporting Employers. Advancing Mental Health Inclusion.",
     "heroSubtitle": "MIND-SET strengthens the Supported Employment model through Augmented Supported Employment, integrating mental health-oriented interventions that support both job placement and long-term employment sustainability.",
     "exploreActivities": "Explore Activities",

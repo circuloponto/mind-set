@@ -1,3 +1,4 @@
+import { BookOpen, ClipboardList, MessageCircle, Heart, Scale, Video } from 'lucide-react';
 import './Resources.css';
 
 const Resources = () => {
@@ -7,7 +8,7 @@ const Resources = () => {
       title: 'Caregiver E-Manual',
       description: 'Comprehensive guide covering essential caregiving topics, from understanding disability to self-care strategies.',
       type: 'E-Book',
-      icon: '📚',
+      icon: BookOpen,
       available: true,
     },
     {
@@ -15,7 +16,7 @@ const Resources = () => {
       title: 'Self-Assessment Tool',
       description: 'Interactive tool to evaluate your caregiving skills and receive personalised recommendations.',
       type: 'Interactive Tool',
-      icon: '📋',
+      icon: ClipboardList,
       available: true,
     },
     {
@@ -23,7 +24,7 @@ const Resources = () => {
       title: 'Communication Guide',
       description: 'Practical strategies for effective communication with care recipients and healthcare professionals.',
       type: 'Guide',
-      icon: '💬',
+      icon: MessageCircle,
       available: true,
     },
     {
@@ -31,7 +32,7 @@ const Resources = () => {
       title: 'Self-Care Toolkit',
       description: 'Resources and exercises to help caregivers maintain their own wellbeing while caring for others.',
       type: 'Toolkit',
-      icon: '❤️',
+      icon: Heart,
       available: true,
     },
     {
@@ -39,7 +40,7 @@ const Resources = () => {
       title: 'Legal Rights Handbook',
       description: 'Information about caregiver rights, benefits, and support services available across Europe.',
       type: 'Handbook',
-      icon: '⚖️',
+      icon: Scale,
       available: false,
     },
     {
@@ -47,7 +48,7 @@ const Resources = () => {
       title: 'Video Tutorials',
       description: 'Step-by-step video guides on practical caregiving techniques and strategies.',
       type: 'Video',
-      icon: '🎥',
+      icon: Video,
       available: false,
     },
   ];
@@ -73,14 +74,16 @@ const Resources = () => {
           </p>
 
           <div className="resources-grid" role="list">
-            {resources.map((resource) => (
-              <article 
-                key={resource.id} 
+            {resources.map((resource) => {
+              const Icon = resource.icon;
+              return (
+              <article
+                key={resource.id}
                 className={`resource-card ${!resource.available ? 'coming-soon' : ''}`}
                 role="listitem"
               >
                 <div className="resource-icon" aria-hidden="true">
-                  {resource.icon}
+                  <Icon size={40} strokeWidth={1.75} />
                 </div>
                 <div className="resource-content">
                   <div className="resource-header">
@@ -109,7 +112,8 @@ const Resources = () => {
                   )}
                 </div>
               </article>
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>

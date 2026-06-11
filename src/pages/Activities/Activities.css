@@ -164,6 +164,13 @@
   margin: 0;
 }
 
+.activities-conclusion {
+  margin: 2.5rem 0 0;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--color-text);
+}
+
 @media (max-width: 768px) {
   .page-hero {
     padding: 3rem 1rem;

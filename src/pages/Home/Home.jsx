@@ -41,7 +41,7 @@ const Home = () => {
           <div className="hero__content">
             <div className="hero__badge">
               <Sparkles size={14} />
-              <span>Erasmus+ Project</span>
+              <span>{t('home.heroBadge')}</span>
             </div>
             <h1 id="hero-title" className="hero__title">
               {t('home.heroTitle')}
@@ -74,7 +74,7 @@ const Home = () => {
       <section className="section section--features" aria-labelledby="about-title">
         <div className="section__container">
           <div className="section__header">
-            <span className="section__label">What We Do</span>
+            <span className="section__label">{t('home.aboutLabel')}</span>
             <h2 id="about-title" className="section__title">{t('home.aboutTitle')}</h2>
             <p className="section__subtitle">{t('home.aboutSubtitle')}</p>
           </div>
@@ -99,7 +99,7 @@ const Home = () => {
       <section className="section section--objectives" aria-labelledby="objectives-title">
         <div className="section__container">
           <div className="section__header">
-            <span className="section__label">Our Goals</span>
+            <span className="section__label">{t('home.objectivesLabel')}</span>
             <h2 id="objectives-title" className="section__title">{t('home.objectivesTitle')}</h2>
           </div>
           <div className="objectives__grid">

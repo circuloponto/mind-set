@@ -1,11 +1,15 @@
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { Mail, ArrowUpRight, Heart } from 'lucide-react';
+import { Mail, Globe, ArrowUpRight } from 'lucide-react';
 import './Footer.css';
+
+// Coordinator (RUMO) contact details — keep in sync with the Contacts page.
+const COORDINATOR_EMAIL = 'geral@rumo.org.pt';
 
 const Footer = () => {
   const { t } = useTranslation();
   const currentYear = new Date().getFullYear();
+  const coordinatorWebsite = t('partners.partner1Website');
 
   return (
     <footer className="footer" role="contentinfo">
@@ -88,9 +92,18 @@ const Footer = () => {
           <div className="footer__section">
             <h3 className="footer__heading">{t('footer.contact')}</h3>
             <address className="footer__contact">
-              <a href="mailto:info@bridge-project.eu" className="footer__contact-link">
+              <a href={`mailto:${COORDINATOR_EMAIL}`} className="footer__contact-link">
                 <Mail size={18} />
-                <span>info@bridge-project.eu</span>
+                <span>{COORDINATOR_EMAIL}</span>
+              </a>
+              <a
+                href={coordinatorWebsite}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="footer__contact-link"
+              >
+                <Globe size={18} />
+                <span>{coordinatorWebsite.replace(/^https?:\/\//, '').replace(/\/$/, '')}</span>
               </a>
             </address>
           </div>

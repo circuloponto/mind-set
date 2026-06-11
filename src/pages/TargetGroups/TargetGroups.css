@@ -68,7 +68,8 @@
 }
 
 .target-icon {
-  font-size: 3rem;
+  color: var(--color-primary-dark);
+  line-height: 0;
   flex-shrink: 0;
 }
 

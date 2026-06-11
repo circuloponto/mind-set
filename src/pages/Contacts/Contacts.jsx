@@ -1,25 +1,13 @@
-import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { Mail, MapPin, Globe } from 'lucide-react';
 import './Contacts.css';
+
+// Coordinator (RUMO) contact details. Website comes from the partners locale data.
+const COORDINATOR_EMAIL = 'geral@rumo.org.pt';
 
 const Contacts = () => {
   const { t } = useTranslation();
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: '',
-  });
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    alert('Thank you for your message. We will respond shortly.');
-  };
+  const coordinatorWebsite = t('partners.partner1Website');
 
   return (
     <div className="contacts-page">
@@ -30,75 +18,33 @@ const Contacts = () => {
         </div>
       </section>
 
-      <section className="section" aria-labelledby="contact-form-title">
+      <section className="section" aria-labelledby="contact-info-title">
         <div className="container">
-          <div className="contact-grid">
-            <div className="contact-info">
-              <h2 id="contact-form-title" className="section-heading">Get in Touch</h2>
-              <p>Have questions about the BRIDGE project? We'd love to hear from you.</p>
-              <div className="contact-details">
-                <div className="contact-item">
-                  <strong>Email</strong>
-                  <a href="mailto:info@bridge-project.eu">info@bridge-project.eu</a>
-                </div>
-                <div className="contact-item">
-                  <strong>Project Coordinator</strong>
-                  <p>Partner Organisation 1, Portugal</p>
-                </div>
-              </div>
-            </div>
+          <div className="contact-info">
+            <h2 id="contact-info-title" className="section-heading">{t('contacts.getInTouch')}</h2>
+            <p className="contact-intro">{t('contacts.introText')}</p>
 
-            <form className="contact-form" onSubmit={handleSubmit}>
-              <div className="form-group">
-                <label htmlFor="name">Full Name <span aria-hidden="true">*</span></label>
-                <input 
-                  type="text" 
-                  id="name" 
-                  name="name" 
-                  value={formData.name} 
-                  onChange={handleChange} 
-                  required 
-                  aria-required="true"
-                />
-              </div>
-              <div className="form-group">
-                <label htmlFor="email">Email Address <span aria-hidden="true">*</span></label>
-                <input 
-                  type="email" 
-                  id="email" 
-                  name="email" 
-                  value={formData.email} 
-                  onChange={handleChange} 
-                  required 
-                  aria-required="true"
-                />
-              </div>
-              <div className="form-group">
-                <label htmlFor="subject">Subject <span aria-hidden="true">*</span></label>
-                <input 
-                  type="text" 
-                  id="subject" 
-                  name="subject" 
-                  value={formData.subject} 
-                  onChange={handleChange} 
-                  required 
-                  aria-required="true"
-                />
-              </div>
-              <div className="form-group">
-                <label htmlFor="message">Message <span aria-hidden="true">*</span></label>
-                <textarea 
-                  id="message" 
-                  name="message" 
-                  rows="5" 
-                  value={formData.message} 
-                  onChange={handleChange} 
-                  required 
-                  aria-required="true"
-                ></textarea>
-              </div>
-              <button type="submit" className="submit-btn">Send Message</button>
-            </form>
+            <div className="contact-card">
+              <span className="contact-card__label">{t('contacts.coordinator')}</span>
+              <h3 className="contact-card__org">{t('contacts.coordinatorOrg')}</h3>
+
+              <ul className="contact-card__details">
+                <li className="contact-detail">
+                  <MapPin size={18} aria-hidden="true" />
+                  <span>{t('contacts.coordinatorLocation')}</span>
+                </li>
+                <li className="contact-detail">
+                  <Mail size={18} aria-hidden="true" />
+                  <a href={`mailto:${COORDINATOR_EMAIL}`}>{COORDINATOR_EMAIL}</a>
+                </li>
+                <li className="contact-detail">
+                  <Globe size={18} aria-hidden="true" />
+                  <a href={coordinatorWebsite} target="_blank" rel="noopener noreferrer">
+                    {coordinatorWebsite.replace(/^https?:\/\//, '').replace(/\/$/, '')}
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>

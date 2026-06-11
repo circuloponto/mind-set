@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next';
+import { Users, Stethoscope, GraduationCap, Handshake, Landmark } from 'lucide-react';
 import './TargetGroups.css';
 
 const TargetGroups = () => {
@@ -17,7 +18,7 @@ const TargetGroups = () => {
         <div className="container">
           <h2 id="primary-target" className="section-heading">{t('targetGroups.primaryTitle')}</h2>
           <div className="target-card primary">
-            <div className="target-icon" aria-hidden="true">👨‍👩‍👧‍👦</div>
+            <div className="target-icon" aria-hidden="true"><Users size={48} strokeWidth={1.75} /></div>
             <div className="target-content">
               <h3>{t('targetGroups.primaryName')}</h3>
               <p>{t('targetGroups.primaryText')}</p>
@@ -31,25 +32,25 @@ const TargetGroups = () => {
           <h2 id="secondary-targets" className="section-heading">{t('targetGroups.secondaryTitle')}</h2>
           <div className="targets-grid">
             <article className="target-card">
-              <div className="target-icon" aria-hidden="true">🏥</div>
+              <div className="target-icon" aria-hidden="true"><Stethoscope size={40} strokeWidth={1.75} /></div>
               <h3>{t('targetGroups.secondary1Name')}</h3>
               <p>{t('targetGroups.secondary1Text')}</p>
             </article>
 
             <article className="target-card">
-              <div className="target-icon" aria-hidden="true">🎓</div>
+              <div className="target-icon" aria-hidden="true"><GraduationCap size={40} strokeWidth={1.75} /></div>
               <h3>{t('targetGroups.secondary2Name')}</h3>
               <p>{t('targetGroups.secondary2Text')}</p>
             </article>
 
             <article className="target-card">
-              <div className="target-icon" aria-hidden="true">🤝</div>
+              <div className="target-icon" aria-hidden="true"><Handshake size={40} strokeWidth={1.75} /></div>
               <h3>{t('targetGroups.secondary3Name')}</h3>
               <p>{t('targetGroups.secondary3Text')}</p>
             </article>
 
             <article className="target-card">
-              <div className="target-icon" aria-hidden="true">🏛️</div>
+              <div className="target-icon" aria-hidden="true"><Landmark size={40} strokeWidth={1.75} /></div>
               <h3>{t('targetGroups.secondary4Name')}</h3>
               <p>{t('targetGroups.secondary4Text')}</p>
             </article>

@@ -78,7 +78,7 @@
 
 .hero__title {
   font-family: var(--font-display);
-  font-size: clamp(2.5rem, 5vw, 3.75rem);
+  font-size: clamp(2.25rem, 4.5vw, 3.25rem);
   font-weight: 800;
   line-height: 1.1;
   color: #ffffff;
@@ -149,11 +149,10 @@
 .hero__visual-icon {
   position: relative;
   z-index: 1;
-  width: 180px;
-  height: 180px;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: var(--space-8) var(--space-10);
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(20px);
   border-radius: var(--radius-2xl);
@@ -162,7 +161,7 @@
 }
 
 .hero__visual-logo {
-  width: 140px;
+  width: 260px;
   height: auto;
   filter: brightness(0) invert(1);
 }
@@ -479,16 +478,15 @@
   }
 
   .hero__visual {
-    max-width: 320px;
+    max-width: 360px;
   }
 
   .hero__visual-icon {
-    width: 140px;
-    height: 140px;
+    padding: var(--space-6) var(--space-8);
   }
 
   .hero__visual-logo {
-    width: 100px;
+    width: 200px;
   }
 
   .features__grid {
