@@ -1,15 +1,23 @@
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { Mail, Globe, ArrowUpRight } from 'lucide-react';
+import enDisclaimer from '../../assets/img/EN_Disclaimer.png';
+import ptDisclaimer from '../../assets/img/PT_Disclaimer.png';
 import './Footer.css';
 
 // Coordinator (RUMO) contact details — keep in sync with the Contacts page.
 const COORDINATOR_EMAIL = 'geral@rumo.org.pt';
 
 const Footer = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const currentYear = new Date().getFullYear();
   const coordinatorWebsite = t('partners.partner1Website');
+
+  const lang = (i18n.resolvedLanguage || i18n.language || 'en').split('-')[0];
+  const euLogo = lang === 'pt' ? ptDisclaimer : enDisclaimer;
+  const euLogoAlt = lang === 'pt'
+    ? 'Cofinanciado pela União Europeia'
+    : 'Co-funded by the European Union';
 
   return (
     <footer className="footer" role="contentinfo">
@@ -112,9 +120,9 @@ const Footer = () => {
         {/* EU Funding Notice */}
         <div className="footer__eu">
           <div className="footer__eu-content">
-            <img 
-              src="https://erasmus-plus.ec.europa.eu/sites/default/files/2021-09/eu-flag.jpg" 
-              alt="European Union Flag" 
+            <img
+              src={euLogo}
+              alt={euLogoAlt}
               className="footer__eu-flag"
             />
             <p className="footer__eu-text">{t('footer.euDisclaimer')}</p>

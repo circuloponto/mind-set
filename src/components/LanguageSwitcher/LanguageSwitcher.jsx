@@ -49,7 +49,8 @@ const LanguageSwitcher = () => {
     { code: 'ro', name: 'Română' },
   ];
 
-  const currentLanguage = languages.find(lang => lang.code === i18n.language) || languages[0];
+  const activeCode = (i18n.resolvedLanguage || i18n.language || 'en').split('-')[0];
+  const currentLanguage = languages.find(lang => lang.code === activeCode) || languages[0];
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -132,8 +133,8 @@ const LanguageSwitcher = () => {
             <li
               key={lang.code}
               role="option"
-              aria-selected={lang.code === i18n.language}
-              className={`language-option ${lang.code === i18n.language ? 'is-active' : ''}`}
+              aria-selected={lang.code === activeCode}
+              className={`language-option ${lang.code === activeCode ? 'is-active' : ''}`}
               onClick={() => handleLanguageChange(lang.code)}
               onKeyDown={(e) => handleKeyDown(e, lang.code)}
               tabIndex={0}

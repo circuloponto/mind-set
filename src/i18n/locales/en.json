@@ -187,8 +187,23 @@
   "news": {
     "title": "News",
     "subtitle": "Latest updates from the MIND-SET project",
+    "intro1": "This section will share the main updates, activities, and results of the MIND-SET project, including transnational meetings, resource development, training activities, multiplier events, and dissemination initiatives.",
+    "intro2": "Follow this page to learn about the project’s progress and access updates published throughout its implementation.",
     "noNews": "News and updates will be posted here as the project progresses.",
-    "stayTuned": "Stay tuned for upcoming announcements about project activities, events, and results."
+    "stayTuned": "Stay tuned for upcoming announcements about project activities, events, and results.",
+    "items": [
+      {
+        "title": "First Transnational Project Meeting of MIND-SET held in Porto",
+        "date": "21 January 2026",
+        "body": [
+          "The first Transnational Project Meeting of the MIND-SET project took place on 21 January 2026 in Porto, Portugal, at CONSULTIS facilities. The meeting brought together representatives from the partner organisations RUMO, CONSULTIS, and Health Action Overseas Romania (HAO), marking the formal start of transnational cooperation within the project.",
+          "During the meeting, partners had the opportunity to discuss the project objectives, planned activities, expected results, and work plan. Particular attention was given to the Project Management & Quality Plan (PMQP). Partners also reviewed the administrative and financial rules, reporting mechanisms, and payment arrangements.",
+          "One of the key moments of the meeting was dedicated to the presentation and discussion of Activity 2 – Augmented Supported Employment Toolkit: Advancing Mental Health Inclusion, the project’s core output. Partners discussed the initial structure of the Toolkit, its practical orientation, and its contribution to strengthening the competencies of Supported Employment professionals working with individuals with severe mental illness.",
+          "The meeting also included the presentation of the Dissemination and Exploitation Plan, as well as the definition of the action plan and next steps. This first meeting helped consolidate a shared vision among partners and established the basis for collaborative, efficient, and results-oriented implementation.",
+          "MIND-SET – Augmented Supported Employment for Mental Health Inclusion is co-funded by the Erasmus+ programme and aims to promote Augmented Supported Employment as a mental health-informed approach, contributing to more inclusive and sustainable employment pathways."
+        ]
+      }
+    ]
   },
   "contacts": {
     "title": "Contacts",
@@ -232,7 +247,185 @@
     "analyticsCookies": "Analytics Cookies",
     "analyticsDesc": "Help us understand how visitors interact with our website.",
     "functionalCookies": "Functional Cookies",
-    "functionalDesc": "Enable enhanced functionality and personalization."
+    "functionalDesc": "Enable enhanced functionality and personalization.",
+    "page": {
+      "title": "Cookie Policy",
+      "subtitle": "How we use cookies on this website",
+      "lastUpdated": "Last updated: January 2025",
+      "s1Title": "1. What Are Cookies?",
+      "s1Text": "Cookies are small text files stored on your device when you visit a website. They help websites remember your preferences and improve your browsing experience.",
+      "s2Title": "2. How We Use Cookies",
+      "s2Text": "The MIND-SET project website uses cookies for the following purposes:",
+      "s21Title": "2.1 Necessary Cookies",
+      "s21Text": "These cookies are essential for the website to function properly. They enable basic functions like page navigation and access to secure areas. The website cannot function properly without these cookies.",
+      "tableName": "Cookie Name",
+      "tablePurpose": "Purpose",
+      "tableDuration": "Duration",
+      "tableRowPurpose": "Stores your cookie consent preferences",
+      "tableRowDuration": "1 year",
+      "s22Title": "2.2 Analytics Cookies (Optional)",
+      "s22Text": "These cookies help us understand how visitors interact with our website by collecting and reporting information anonymously. This helps us improve our website and services.",
+      "s22Note": "Analytics cookies are only set if you consent to them.",
+      "s23Title": "2.3 Functional Cookies (Optional)",
+      "s23Text": "These cookies enable enhanced functionality and personalisation, such as remembering your language preferences or region.",
+      "s23Note": "Functional cookies are only set if you consent to them.",
+      "noteLabel": "Note:",
+      "s3Title": "3. Managing Your Cookie Preferences",
+      "s3Text1": "You can manage your cookie preferences at any time. When you first visit our website, you will see a cookie consent banner where you can choose which cookies to accept.",
+      "s3Text2": "To change your preferences later, click the button below:",
+      "manageBtn": "Manage Cookie Preferences",
+      "s4Title": "4. Browser Cookie Settings",
+      "s4Text": "You can also control cookies through your browser settings. Most browsers allow you to:",
+      "s4List": [
+        "View what cookies are stored and delete them individually",
+        "Block third-party cookies",
+        "Block cookies from specific websites",
+        "Block all cookies",
+        "Delete all cookies when you close your browser"
+      ],
+      "s4Note": "Please note that blocking all cookies may affect your experience on our website and other websites you visit.",
+      "s5Title": "5. Third-Party Cookies",
+      "s5Text": "Our website may contain links to third-party websites. These websites have their own cookie policies, and we have no control over their cookies. We encourage you to read the cookie policies of any third-party websites you visit.",
+      "s6Title": "6. Updates to This Policy",
+      "s6Text": "We may update this Cookie Policy from time to time to reflect changes in our practices or for legal reasons. We will notify you of any significant changes by posting the new policy on this page.",
+      "s7Title": "7. Contact Us",
+      "s7Text": "If you have questions about our use of cookies, please contact us at:",
+      "emailLabel": "Email:"
+    }
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "subtitle": "How we collect, use, and protect your personal data",
+    "lastUpdated": "Last updated: January 2025",
+    "s1Title": "1. Introduction",
+    "s1Text": "The MIND-SET project (\"we\", \"us\", \"our\") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website.",
+    "s2Title": "2. Information We Collect",
+    "s21Title": "2.1 Information You Provide",
+    "s21Text": "We may collect information you voluntarily provide, including:",
+    "s21List": [
+      "Contact information (name, email address) when you contact us or subscribe to updates",
+      "Feedback and correspondence when you participate in surveys or contact us",
+      "Event registration information when you sign up for multiplier events"
+    ],
+    "s22Title": "2.2 Automatically Collected Information",
+    "s22Text": "When you visit our website, we may automatically collect:",
+    "s22List": [
+      "Device information (browser type, operating system)",
+      "Usage data (pages visited, time spent on pages)",
+      "IP address and approximate location"
+    ],
+    "s3Title": "3. How We Use Your Information",
+    "s3Text": "We use the collected information to:",
+    "s3List": [
+      "Provide and maintain our website and services",
+      "Respond to your inquiries and requests",
+      "Send you project updates and newsletters (with your consent)",
+      "Improve our website and user experience",
+      "Comply with legal obligations"
+    ],
+    "s4Title": "4. Legal Basis for Processing (GDPR)",
+    "s4Text": "Under the General Data Protection Regulation (GDPR), we process your data based on:",
+    "s4List": [
+      { "term": "Consent", "text": "When you subscribe to newsletters or submit contact forms" },
+      { "term": "Legitimate interests", "text": "To improve our services and website functionality" },
+      { "term": "Legal obligation", "text": "To comply with applicable laws and regulations" }
+    ],
+    "s5Title": "5. Data Sharing",
+    "s5Text": "We do not sell your personal information. We may share your data with:",
+    "s5List": [
+      "MIND-SET project partners for project-related purposes",
+      "Service providers who assist in website operation",
+      "Authorities when required by law"
+    ],
+    "s6Title": "6. Data Retention",
+    "s6Text": "We retain your personal data only for as long as necessary to fulfill the purposes outlined in this policy, unless a longer retention period is required by law.",
+    "s7Title": "7. Your Rights",
+    "s7Text": "Under GDPR, you have the right to:",
+    "s7List": [
+      "Access your personal data",
+      "Rectify inaccurate data",
+      "Request erasure of your data",
+      "Restrict processing of your data",
+      "Data portability",
+      "Object to processing",
+      "Withdraw consent at any time"
+    ],
+    "s8Title": "8. Data Security",
+    "s8Text": "We implement appropriate technical and organisational measures to protect your personal data against unauthorised access, alteration, disclosure, or destruction.",
+    "s9Title": "9. International Transfers",
+    "s9Text": "Your data may be transferred to and processed in countries within the European Economic Area (EEA) where our project partners are located.",
+    "s10Title": "10. Contact Us",
+    "s10Text": "For questions about this Privacy Policy or to exercise your rights, contact us at:",
+    "emailLabel": "Email:",
+    "s11Title": "11. Changes to This Policy",
+    "s11Text": "We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new policy on this page and updating the \"Last updated\" date."
+  },
+  "accessibility": {
+    "title": "Accessibility Statement",
+    "subtitle": "Our commitment to digital accessibility",
+    "lastUpdated": "Last updated: January 2025",
+    "s1Title": "Our Commitment",
+    "s1Text": "The MIND-SET project is committed to ensuring digital accessibility for people with disabilities. We are continually improving the user experience for everyone and applying the relevant accessibility standards.",
+    "s2Title": "Conformance Status",
+    "s2Text1": "The Web Content Accessibility Guidelines (WCAG) defines requirements for designers and developers to improve accessibility for people with disabilities. It defines three levels of conformance: Level A, Level AA, and Level AAA.",
+    "s2Text2a": "The MIND-SET project website strives to conform to ",
+    "s2Standard": "WCAG 2.1 Level AA",
+    "s2Text2b": ". We are working to achieve and maintain this standard across all pages.",
+    "featuresTitle": "Accessibility Features",
+    "featuresText": "This website includes the following accessibility features:",
+    "navTitle": "Navigation",
+    "navList": [
+      "Skip to main content link for keyboard users",
+      "Consistent navigation structure across all pages",
+      "Logical heading hierarchy (H1, H2, H3, etc.)",
+      "Descriptive link text",
+      "Keyboard-accessible menus and interactive elements"
+    ],
+    "visualTitle": "Visual Design",
+    "visualList": [
+      "Sufficient colour contrast ratios (minimum 4.5:1 for normal text)",
+      "Text can be resized up to 200% without loss of functionality",
+      "No content relies solely on colour to convey information",
+      "Responsive design that works on various screen sizes"
+    ],
+    "contentTitle": "Content",
+    "contentList": [
+      "Alternative text for images",
+      "ARIA labels for interactive elements",
+      "Form labels and error messages",
+      "Clear and simple language"
+    ],
+    "keyboardTitle": "Keyboard Navigation",
+    "keyboardText": "All functionality is available using a keyboard:",
+    "keyboardList": [
+      { "term": "Tab", "text": "Move forward through interactive elements" },
+      { "term": "Shift + Tab", "text": "Move backward through interactive elements" },
+      { "term": "Enter", "text": "Activate links and buttons" },
+      { "term": "Escape", "text": "Close menus and dialogs" },
+      { "term": "Arrow keys", "text": "Navigate within menus" }
+    ],
+    "techTitle": "Assistive Technologies",
+    "techText": "This website is designed to be compatible with:",
+    "techList": [
+      "Screen readers (JAWS, NVDA, VoiceOver)",
+      "Screen magnification software",
+      "Speech recognition software",
+      "Keyboard-only navigation"
+    ],
+    "limitsTitle": "Known Limitations",
+    "limitsText": "While we strive for full accessibility, some content may have limitations:",
+    "limitsList": [
+      "Some third-party content may not be fully accessible",
+      "PDF documents may have varying levels of accessibility",
+      "Some older content may not yet meet all standards"
+    ],
+    "limitsText2": "We are actively working to address these limitations and improve accessibility across all content.",
+    "feedbackTitle": "Feedback",
+    "feedbackText": "We welcome your feedback on the accessibility of the MIND-SET project website. If you encounter any accessibility barriers or have suggestions for improvement, please contact us:",
+    "emailLabel": "Email:",
+    "feedbackText2": "We aim to respond to accessibility feedback within 5 business days.",
+    "enforcementTitle": "Enforcement Procedure",
+    "enforcementText": "If you are not satisfied with our response to your accessibility concern, you may escalate the matter to the relevant national enforcement body in your country."
   },
   "language": {
     "en": "English",

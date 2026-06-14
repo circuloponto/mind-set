@@ -17,6 +17,10 @@ i18n
     resources,
     fallbackLng: 'en',
     supportedLngs: ['en', 'pt', 'ro'],
+    // Map regional variants (e.g. pt-PT, en-GB) to their base language
+    // so a Portuguese browser resolves to 'pt' instead of falling back to 'en'.
+    load: 'languageOnly',
+    nonExplicitSupportedLngs: true,
     interpolation: {
       escapeValue: false,
     },

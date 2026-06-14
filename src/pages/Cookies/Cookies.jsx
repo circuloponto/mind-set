@@ -1,8 +1,17 @@
+import { useTranslation } from 'react-i18next';
 import './Cookies.css';
 
+const LEGAL_EMAIL = 'geral@rumo.org.pt';
+
 const Cookies = () => {
+  const { t } = useTranslation();
+  const list = (key) => {
+    const value = t(key, { returnObjects: true });
+    return Array.isArray(value) ? value : [];
+  };
+
   const handleManageCookies = () => {
-    localStorage.removeItem('bridge-cookie-consent');
+    localStorage.removeItem('mindset-cookie-consent');
     window.location.reload();
   };
 
@@ -10,120 +19,80 @@ const Cookies = () => {
     <div className="cookies-page">
       <section className="page-hero" aria-labelledby="page-title">
         <div className="container">
-          <h1 id="page-title" className="page-title">Cookie Policy</h1>
-          <p className="page-subtitle">How we use cookies on this website</p>
+          <h1 id="page-title" className="page-title">{t('cookies.page.title')}</h1>
+          <p className="page-subtitle">{t('cookies.page.subtitle')}</p>
         </div>
       </section>
 
       <section className="section">
         <div className="container legal-content">
-          <p className="last-updated">Last updated: January 2025</p>
+          <p className="last-updated">{t('cookies.page.lastUpdated')}</p>
 
-          <h2>1. What Are Cookies?</h2>
-          <p>
-            Cookies are small text files stored on your device when you visit a website. 
-            They help websites remember your preferences and improve your browsing experience.
-          </p>
+          <h2>{t('cookies.page.s1Title')}</h2>
+          <p>{t('cookies.page.s1Text')}</p>
 
-          <h2>2. How We Use Cookies</h2>
-          <p>The BRIDGE project website uses cookies for the following purposes:</p>
+          <h2>{t('cookies.page.s2Title')}</h2>
+          <p>{t('cookies.page.s2Text')}</p>
 
-          <h3>2.1 Necessary Cookies</h3>
-          <p>
-            These cookies are essential for the website to function properly. They enable 
-            basic functions like page navigation and access to secure areas. The website 
-            cannot function properly without these cookies.
-          </p>
+          <h3>{t('cookies.page.s21Title')}</h3>
+          <p>{t('cookies.page.s21Text')}</p>
           <table className="cookie-table">
             <thead>
               <tr>
-                <th>Cookie Name</th>
-                <th>Purpose</th>
-                <th>Duration</th>
+                <th>{t('cookies.page.tableName')}</th>
+                <th>{t('cookies.page.tablePurpose')}</th>
+                <th>{t('cookies.page.tableDuration')}</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>bridge-cookie-consent</td>
-                <td>Stores your cookie consent preferences</td>
-                <td>1 year</td>
+                <td>mindset-cookie-consent</td>
+                <td>{t('cookies.page.tableRowPurpose')}</td>
+                <td>{t('cookies.page.tableRowDuration')}</td>
               </tr>
             </tbody>
           </table>
 
-          <h3>2.2 Analytics Cookies (Optional)</h3>
+          <h3>{t('cookies.page.s22Title')}</h3>
+          <p>{t('cookies.page.s22Text')}</p>
           <p>
-            These cookies help us understand how visitors interact with our website by 
-            collecting and reporting information anonymously. This helps us improve our 
-            website and services.
-          </p>
-          <p>
-            <strong>Note:</strong> Analytics cookies are only set if you consent to them.
+            <strong>{t('cookies.page.noteLabel')}</strong> {t('cookies.page.s22Note')}
           </p>
 
-          <h3>2.3 Functional Cookies (Optional)</h3>
+          <h3>{t('cookies.page.s23Title')}</h3>
+          <p>{t('cookies.page.s23Text')}</p>
           <p>
-            These cookies enable enhanced functionality and personalisation, such as 
-            remembering your language preferences or region.
-          </p>
-          <p>
-            <strong>Note:</strong> Functional cookies are only set if you consent to them.
+            <strong>{t('cookies.page.noteLabel')}</strong> {t('cookies.page.s23Note')}
           </p>
 
-          <h2>3. Managing Your Cookie Preferences</h2>
-          <p>
-            You can manage your cookie preferences at any time. When you first visit our 
-            website, you will see a cookie consent banner where you can choose which 
-            cookies to accept.
-          </p>
-          <p>
-            To change your preferences later, click the button below:
-          </p>
-          <button 
+          <h2>{t('cookies.page.s3Title')}</h2>
+          <p>{t('cookies.page.s3Text1')}</p>
+          <p>{t('cookies.page.s3Text2')}</p>
+          <button
             className="manage-cookies-btn"
             onClick={handleManageCookies}
-            aria-label="Open cookie preferences dialog"
+            aria-label={t('cookies.page.manageBtn')}
           >
-            Manage Cookie Preferences
+            {t('cookies.page.manageBtn')}
           </button>
 
-          <h2>4. Browser Cookie Settings</h2>
-          <p>
-            You can also control cookies through your browser settings. Most browsers 
-            allow you to:
-          </p>
+          <h2>{t('cookies.page.s4Title')}</h2>
+          <p>{t('cookies.page.s4Text')}</p>
           <ul>
-            <li>View what cookies are stored and delete them individually</li>
-            <li>Block third-party cookies</li>
-            <li>Block cookies from specific websites</li>
-            <li>Block all cookies</li>
-            <li>Delete all cookies when you close your browser</li>
+            {list('cookies.page.s4List').map((item, i) => <li key={i}>{item}</li>)}
           </ul>
-          <p>
-            Please note that blocking all cookies may affect your experience on our 
-            website and other websites you visit.
-          </p>
+          <p>{t('cookies.page.s4Note')}</p>
 
-          <h2>5. Third-Party Cookies</h2>
-          <p>
-            Our website may contain links to third-party websites. These websites have 
-            their own cookie policies, and we have no control over their cookies. We 
-            encourage you to read the cookie policies of any third-party websites you visit.
-          </p>
+          <h2>{t('cookies.page.s5Title')}</h2>
+          <p>{t('cookies.page.s5Text')}</p>
 
-          <h2>6. Updates to This Policy</h2>
-          <p>
-            We may update this Cookie Policy from time to time to reflect changes in our 
-            practices or for legal reasons. We will notify you of any significant changes 
-            by posting the new policy on this page.
-          </p>
+          <h2>{t('cookies.page.s6Title')}</h2>
+          <p>{t('cookies.page.s6Text')}</p>
 
-          <h2>7. Contact Us</h2>
+          <h2>{t('cookies.page.s7Title')}</h2>
+          <p>{t('cookies.page.s7Text')}</p>
           <p>
-            If you have questions about our use of cookies, please contact us at:
-          </p>
-          <p>
-            <strong>Email:</strong> <a href="mailto:info@bridge-project.eu">info@bridge-project.eu</a>
+            <strong>{t('cookies.page.emailLabel')}</strong> <a href={`mailto:${LEGAL_EMAIL}`}>{LEGAL_EMAIL}</a>
           </p>
         </div>
       </section>

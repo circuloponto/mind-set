@@ -142,10 +142,12 @@
 }
 
 .footer__eu-flag {
-  width: 56px;
+  width: 140px;
   height: auto;
   flex-shrink: 0;
-  border-radius: var(--radius-sm);
+  background: #ffffff;
+  padding: var(--space-3);
+  border-radius: var(--radius-md);
 }
 
 .footer__eu-text {

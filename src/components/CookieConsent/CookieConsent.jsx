@@ -14,7 +14,7 @@ const CookieConsent = () => {
   const [showSettings, setShowSettings] = useState(false);
 
   useEffect(() => {
-    const consent = localStorage.getItem('bridge-cookie-consent');
+    const consent = localStorage.getItem('mindset-cookie-consent');
     if (!consent) {
       setIsVisible(true);
     }
@@ -27,7 +27,7 @@ const CookieConsent = () => {
       functional: true,
       timestamp: new Date().toISOString(),
     };
-    localStorage.setItem('bridge-cookie-consent', JSON.stringify(allAccepted));
+    localStorage.setItem('mindset-cookie-consent', JSON.stringify(allAccepted));
     setIsVisible(false);
   };
 
@@ -38,7 +38,7 @@ const CookieConsent = () => {
       functional: false,
       timestamp: new Date().toISOString(),
     };
-    localStorage.setItem('bridge-cookie-consent', JSON.stringify(necessaryOnly));
+    localStorage.setItem('mindset-cookie-consent', JSON.stringify(necessaryOnly));
     setIsVisible(false);
   };
 
@@ -47,7 +47,7 @@ const CookieConsent = () => {
       ...preferences,
       timestamp: new Date().toISOString(),
     };
-    localStorage.setItem('bridge-cookie-consent', JSON.stringify(savedPreferences));
+    localStorage.setItem('mindset-cookie-consent', JSON.stringify(savedPreferences));
     setIsVisible(false);
   };
 
