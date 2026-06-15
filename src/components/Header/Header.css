@@ -157,8 +157,10 @@
 
 /* ============================================
    Mobile Styles
+   Collapse to the hamburger menu below 1350px so the full
+   nav never overflows into the language selector.
    ============================================ */
-@media (max-width: 1023px) {
+@media (max-width: 1349px) {
   .header__container {
     padding: var(--space-3) var(--space-4);
   }

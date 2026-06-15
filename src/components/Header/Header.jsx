@@ -8,7 +8,7 @@ import './Header.css';
 const Header = () => {
   const { t } = useTranslation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 1024);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 1350);
   const [isScrolled, setIsScrolled] = useState(false);
   const [focusedIndex, setFocusedIndex] = useState(-1);
   const menuRef = useRef(null);
@@ -28,8 +28,8 @@ const Header = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 1024);
-      if (window.innerWidth >= 1024) {
+      setIsMobile(window.innerWidth < 1350);
+      if (window.innerWidth >= 1350) {
         setIsMenuOpen(false);
       }
     };
