@@ -11,6 +11,9 @@
     "contacts": "Contact"
   },
   "home": {
+    "heroBadge": "Proiect Erasmus+",
+    "aboutLabel": "Ce Facem",
+    "objectivesLabel": "Obiectivele Noastre",
     "heroTitle": "Consolidarea competențelor profesioniștilor. Sprijinirea angajatorilor. Promovarea incluziunii în domeniul sănătății mintale.",
     "heroSubtitle": "MIND-SET consolidează modelul de Angajare Asistată prin Angajare Asistată augmentată, integrând intervenții orientate către sănătatea mintală care sprijină atât plasarea în câmpul muncii, cât și sustenabilitatea pe termen lung a locului de muncă.",
     "exploreActivities": "Explorați Activitățile",
@@ -184,8 +187,23 @@
   "news": {
     "title": "Noutăți",
     "subtitle": "Ultimele actualizări din proiectul MIND-SET",
+    "intro1": "În această secțiune vor fi împărtășite principalele noutăți, activități și rezultate ale proiectului MIND-SET, inclusiv reuniuni transnaționale, dezvoltarea resurselor, activități de formare, evenimente de multiplicare și inițiative de diseminare.",
+    "intro2": "Urmăriți această pagină pentru a afla despre progresul proiectului și pentru a accesa actualizările publicate pe parcursul implementării sale.",
     "noNews": "Noutățile și actualizările vor fi publicate aici pe măsură ce proiectul avansează.",
-    "stayTuned": "Rămâneți la curent pentru anunțuri viitoare despre activitățile, evenimentele și rezultatele proiectului."
+    "stayTuned": "Rămâneți la curent pentru anunțuri viitoare despre activitățile, evenimentele și rezultatele proiectului.",
+    "items": [
+      {
+        "title": "Prima Reuniune Transnațională a Proiectului MIND-SET a avut loc la Porto",
+        "date": "21 ianuarie 2026",
+        "body": [
+          "Prima Reuniune Transnațională a proiectului MIND-SET a avut loc la 21 ianuarie 2026, la Porto, Portugalia, la sediul CONSULTIS. Reuniunea a adunat reprezentanți ai organizațiilor partenere RUMO, CONSULTIS și Health Action Overseas Romania (HAO), marcând startul formal al cooperării transnaționale în cadrul proiectului.",
+          "În cadrul reuniunii, partenerii au avut ocazia de a aprofunda obiectivele, activitățile planificate, rezultatele așteptate și planul de lucru al proiectului. O atenție deosebită a fost acordată Planului de Management și Calitate al Proiectului (PMQP). Partenerii au analizat, de asemenea, regulile administrative și financiare, mecanismele de raportare și procedurile de plată.",
+          "Unul dintre momentele-cheie ale reuniunii a fost dedicat prezentării și discutării Activității 2 – Set de Instrumente pentru Angajare Asistată Augmentată: Promovarea Incluziunii în Sănătatea Mintală, principalul rezultat al proiectului. Partenerii au discutat structura inițială a Setului de Instrumente, orientarea sa practică și contribuția sa la consolidarea competențelor profesioniștilor în Angajare Asistată care lucrează cu persoane cu boli mintale grave.",
+          "Reuniunea a inclus, de asemenea, prezentarea Planului de Diseminare și Exploatare, precum și definirea planului de acțiune și a pașilor următori. Această primă reuniune a contribuit la consolidarea unei viziuni comune între parteneri și a stabilit bazele pentru o implementare colaborativă, eficientă și orientată spre rezultate.",
+          "MIND-SET – Augmented Supported Employment for Mental Health Inclusion este cofinanțat de programul Erasmus+ și își propune să promoveze Angajarea Asistată Augmentată ca o abordare informată de sănătatea mintală, contribuind la parcursuri profesionale mai incluzive și mai sustenabile."
+        ]
+      }
+    ]
   },
   "contacts": {
     "title": "Contact",
@@ -229,7 +247,185 @@
     "analyticsCookies": "Cookie-uri de Analiză",
     "analyticsDesc": "Ne ajută să înțelegem cum interacționează vizitatorii cu site-ul nostru.",
     "functionalCookies": "Cookie-uri Funcționale",
-    "functionalDesc": "Permit funcționalități îmbunătățite și personalizare."
+    "functionalDesc": "Permit funcționalități îmbunătățite și personalizare.",
+    "page": {
+      "title": "Politica de Cookie-uri",
+      "subtitle": "Cum utilizăm cookie-urile pe acest website",
+      "lastUpdated": "Ultima actualizare: ianuarie 2025",
+      "s1Title": "1. Ce Sunt Cookie-urile?",
+      "s1Text": "Cookie-urile sunt fișiere text mici stocate pe dispozitivul dumneavoastră atunci când vizitați un website. Acestea ajută website-urile să rețină preferințele dumneavoastră și să îmbunătățească experiența de navigare.",
+      "s2Title": "2. Cum Utilizăm Cookie-urile",
+      "s2Text": "Website-ul proiectului MIND-SET utilizează cookie-uri în următoarele scopuri:",
+      "s21Title": "2.1 Cookie-uri Necesare",
+      "s21Text": "Aceste cookie-uri sunt esențiale pentru funcționarea corectă a website-ului. Ele permit funcții de bază precum navigarea între pagini și accesul la zonele securizate. Website-ul nu poate funcționa corect fără aceste cookie-uri.",
+      "tableName": "Nume Cookie",
+      "tablePurpose": "Scop",
+      "tableDuration": "Durată",
+      "tableRowPurpose": "Stochează preferințele dumneavoastră de consimțământ pentru cookie-uri",
+      "tableRowDuration": "1 an",
+      "s22Title": "2.2 Cookie-uri de Analiză (Opționale)",
+      "s22Text": "Aceste cookie-uri ne ajută să înțelegem cum interacționează vizitatorii cu website-ul nostru, colectând și raportând informații în mod anonim. Acest lucru ne ajută să ne îmbunătățim website-ul și serviciile.",
+      "s22Note": "Cookie-urile de analiză sunt activate doar dacă vă dați consimțământul.",
+      "s23Title": "2.3 Cookie-uri Funcționale (Opționale)",
+      "s23Text": "Aceste cookie-uri permit funcționalități îmbunătățite și personalizare, precum reținerea preferințelor de limbă sau regiune.",
+      "s23Note": "Cookie-urile funcționale sunt activate doar dacă vă dați consimțământul.",
+      "noteLabel": "Notă:",
+      "s3Title": "3. Gestionarea Preferințelor de Cookie-uri",
+      "s3Text1": "Vă puteți gestiona preferințele de cookie-uri în orice moment. La prima vizită pe website-ul nostru, veți vedea un banner de consimțământ pentru cookie-uri unde puteți alege ce cookie-uri să acceptați.",
+      "s3Text2": "Pentru a vă modifica preferințele ulterior, faceți clic pe butonul de mai jos:",
+      "manageBtn": "Gestionați Preferințele de Cookie-uri",
+      "s4Title": "4. Setările de Cookie-uri ale Browserului",
+      "s4Text": "Puteți controla cookie-urile și prin setările browserului. Majoritatea browserelor vă permit să:",
+      "s4List": [
+        "Vizualizați ce cookie-uri sunt stocate și să le ștergeți individual",
+        "Blocați cookie-urile terților",
+        "Blocați cookie-urile de pe anumite website-uri",
+        "Blocați toate cookie-urile",
+        "Ștergeți toate cookie-urile la închiderea browserului"
+      ],
+      "s4Note": "Vă rugăm să rețineți că blocarea tuturor cookie-urilor poate afecta experiența dumneavoastră pe website-ul nostru și pe alte website-uri pe care le vizitați.",
+      "s5Title": "5. Cookie-uri ale Terților",
+      "s5Text": "Website-ul nostru poate conține linkuri către website-uri ale terților. Aceste website-uri au propriile politici de cookie-uri, iar noi nu avem niciun control asupra cookie-urilor lor. Vă încurajăm să citiți politicile de cookie-uri ale oricăror website-uri ale terților pe care le vizitați.",
+      "s6Title": "6. Actualizări ale Acestei Politici",
+      "s6Text": "Putem actualiza periodic această Politică de Cookie-uri pentru a reflecta modificări ale practicilor noastre sau din motive legale. Vă vom notifica cu privire la orice modificări semnificative prin publicarea noii politici pe această pagină.",
+      "s7Title": "7. Contactați-ne",
+      "s7Text": "Dacă aveți întrebări despre utilizarea cookie-urilor de către noi, contactați-ne la:",
+      "emailLabel": "Email:"
+    }
+  },
+  "privacy": {
+    "title": "Politica de Confidențialitate",
+    "subtitle": "Cum colectăm, utilizăm și protejăm datele dumneavoastră personale",
+    "lastUpdated": "Ultima actualizare: ianuarie 2025",
+    "s1Title": "1. Introducere",
+    "s1Text": "Proiectul MIND-SET („noi”, „al nostru”) se angajează să vă protejeze confidențialitatea. Această Politică de Confidențialitate explică modul în care colectăm, utilizăm, divulgăm și protejăm informațiile dumneavoastră atunci când vizitați website-ul nostru.",
+    "s2Title": "2. Informațiile pe Care le Colectăm",
+    "s21Title": "2.1 Informațiile pe Care le Furnizați",
+    "s21Text": "Putem colecta informații pe care le furnizați în mod voluntar, inclusiv:",
+    "s21List": [
+      "Informații de contact (nume, adresă de email) atunci când ne contactați sau vă abonați la actualizări",
+      "Feedback și corespondență atunci când participați la sondaje sau ne contactați",
+      "Informații de înregistrare la evenimente atunci când vă înscrieți la evenimente de multiplicare"
+    ],
+    "s22Title": "2.2 Informații Colectate Automat",
+    "s22Text": "Atunci când vizitați website-ul nostru, putem colecta automat:",
+    "s22List": [
+      "Informații despre dispozitiv (tip de browser, sistem de operare)",
+      "Date de utilizare (pagini vizitate, timpul petrecut pe pagini)",
+      "Adresa IP și locația aproximativă"
+    ],
+    "s3Title": "3. Cum Utilizăm Informațiile Dumneavoastră",
+    "s3Text": "Utilizăm informațiile colectate pentru a:",
+    "s3List": [
+      "Furniza și menține website-ul și serviciile noastre",
+      "Răspunde la întrebările și solicitările dumneavoastră",
+      "Vă trimite actualizări ale proiectului și buletine informative (cu consimțământul dumneavoastră)",
+      "Îmbunătăți website-ul și experiența utilizatorului",
+      "Respecta obligațiile legale"
+    ],
+    "s4Title": "4. Temeiul Juridic al Prelucrării (RGPD)",
+    "s4Text": "În conformitate cu Regulamentul General privind Protecția Datelor (RGPD), prelucrăm datele dumneavoastră pe baza:",
+    "s4List": [
+      { "term": "Consimțământ", "text": "Atunci când vă abonați la buletine informative sau trimiteți formulare de contact" },
+      { "term": "Interese legitime", "text": "Pentru a ne îmbunătăți serviciile și funcționalitatea website-ului" },
+      { "term": "Obligație legală", "text": "Pentru a respecta legile și reglementările aplicabile" }
+    ],
+    "s5Title": "5. Partajarea Datelor",
+    "s5Text": "Nu vindem informațiile dumneavoastră personale. Putem partaja datele dumneavoastră cu:",
+    "s5List": [
+      "Partenerii proiectului MIND-SET în scopuri legate de proiect",
+      "Furnizori de servicii care asistă la operarea website-ului",
+      "Autorități atunci când legea o impune"
+    ],
+    "s6Title": "6. Păstrarea Datelor",
+    "s6Text": "Păstrăm datele dumneavoastră personale doar atât timp cât este necesar pentru a îndeplini scopurile descrise în această politică, cu excepția cazului în care legea impune o perioadă de păstrare mai lungă.",
+    "s7Title": "7. Drepturile Dumneavoastră",
+    "s7Text": "În conformitate cu RGPD, aveți dreptul de a:",
+    "s7List": [
+      "Accesa datele dumneavoastră personale",
+      "Rectifica datele inexacte",
+      "Solicita ștergerea datelor dumneavoastră",
+      "Restricționa prelucrarea datelor dumneavoastră",
+      "Portabilitatea datelor",
+      "Vă opune prelucrării",
+      "Retrage consimțământul în orice moment"
+    ],
+    "s8Title": "8. Securitatea Datelor",
+    "s8Text": "Implementăm măsuri tehnice și organizatorice adecvate pentru a proteja datele dumneavoastră personale împotriva accesului, alterării, divulgării sau distrugerii neautorizate.",
+    "s9Title": "9. Transferuri Internaționale",
+    "s9Text": "Datele dumneavoastră pot fi transferate și prelucrate în țări din Spațiul Economic European (SEE) unde se află partenerii noștri de proiect.",
+    "s10Title": "10. Contactați-ne",
+    "s10Text": "Pentru întrebări despre această Politică de Confidențialitate sau pentru a vă exercita drepturile, contactați-ne la:",
+    "emailLabel": "Email:",
+    "s11Title": "11. Modificări ale Acestei Politici",
+    "s11Text": "Putem actualiza periodic această Politică de Confidențialitate. Vă vom notifica cu privire la orice modificări prin publicarea noii politici pe această pagină și actualizarea datei „Ultima actualizare”."
+  },
+  "accessibility": {
+    "title": "Declarație de Accesibilitate",
+    "subtitle": "Angajamentul nostru față de accesibilitatea digitală",
+    "lastUpdated": "Ultima actualizare: ianuarie 2025",
+    "s1Title": "Angajamentul Nostru",
+    "s1Text": "Proiectul MIND-SET se angajează să asigure accesibilitatea digitală pentru persoanele cu dizabilități. Îmbunătățim continuu experiența utilizatorilor pentru toți și aplicăm standardele de accesibilitate relevante.",
+    "s2Title": "Stadiul Conformității",
+    "s2Text1": "Ghidul de Accesibilitate a Conținutului Web (WCAG) definește cerințele pentru designeri și dezvoltatori în vederea îmbunătățirii accesibilității pentru persoanele cu dizabilități. Acesta definește trei niveluri de conformitate: Nivel A, Nivel AA și Nivel AAA.",
+    "s2Text2a": "Website-ul proiectului MIND-SET urmărește să fie conform cu ",
+    "s2Standard": "WCAG 2.1 Nivel AA",
+    "s2Text2b": ". Lucrăm pentru a atinge și menține acest standard pe toate paginile.",
+    "featuresTitle": "Funcționalități de Accesibilitate",
+    "featuresText": "Acest website include următoarele funcționalități de accesibilitate:",
+    "navTitle": "Navigare",
+    "navList": [
+      "Link pentru a sări la conținutul principal, pentru utilizatorii de tastatură",
+      "Structură de navigare consecventă pe toate paginile",
+      "Ierarhie logică a titlurilor (H1, H2, H3 etc.)",
+      "Text de link descriptiv",
+      "Meniuri și elemente interactive accesibile de la tastatură"
+    ],
+    "visualTitle": "Design Vizual",
+    "visualList": [
+      "Rapoarte de contrast al culorilor suficiente (minimum 4,5:1 pentru text normal)",
+      "Textul poate fi redimensionat până la 200% fără pierderea funcționalității",
+      "Niciun conținut nu se bazează exclusiv pe culoare pentru a transmite informații",
+      "Design responsiv care funcționează pe diverse dimensiuni de ecran"
+    ],
+    "contentTitle": "Conținut",
+    "contentList": [
+      "Text alternativ pentru imagini",
+      "Etichete ARIA pentru elementele interactive",
+      "Etichete de formular și mesaje de eroare",
+      "Limbaj clar și simplu"
+    ],
+    "keyboardTitle": "Navigare de la Tastatură",
+    "keyboardText": "Toate funcționalitățile sunt disponibile utilizând tastatura:",
+    "keyboardList": [
+      { "term": "Tab", "text": "Avansați prin elementele interactive" },
+      { "term": "Shift + Tab", "text": "Reveniți prin elementele interactive" },
+      { "term": "Enter", "text": "Activați linkuri și butoane" },
+      { "term": "Escape", "text": "Închideți meniuri și casete de dialog" },
+      { "term": "Tastele săgeată", "text": "Navigați în cadrul meniurilor" }
+    ],
+    "techTitle": "Tehnologii de Asistență",
+    "techText": "Acest website este conceput pentru a fi compatibil cu:",
+    "techList": [
+      "Cititoare de ecran (JAWS, NVDA, VoiceOver)",
+      "Software de mărire a ecranului",
+      "Software de recunoaștere vocală",
+      "Navigare exclusiv de la tastatură"
+    ],
+    "limitsTitle": "Limitări Cunoscute",
+    "limitsText": "Deși depunem eforturi pentru accesibilitate deplină, unele conținuturi pot avea limitări:",
+    "limitsList": [
+      "Unele conținuturi ale terților pot să nu fie pe deplin accesibile",
+      "Documentele PDF pot avea niveluri variabile de accesibilitate",
+      "Unele conținuturi mai vechi pot să nu îndeplinească încă toate standardele"
+    ],
+    "limitsText2": "Lucrăm activ pentru a aborda aceste limitări și a îmbunătăți accesibilitatea în tot conținutul.",
+    "feedbackTitle": "Feedback",
+    "feedbackText": "Apreciem feedbackul dumneavoastră privind accesibilitatea website-ului proiectului MIND-SET. Dacă întâmpinați bariere de accesibilitate sau aveți sugestii de îmbunătățire, contactați-ne:",
+    "emailLabel": "Email:",
+    "feedbackText2": "Ne propunem să răspundem la feedbackul privind accesibilitatea în termen de 5 zile lucrătoare.",
+    "enforcementTitle": "Procedura de Sesizare",
+    "enforcementText": "Dacă nu sunteți mulțumit de răspunsul nostru la preocuparea dumneavoastră privind accesibilitatea, puteți escalada problema către organismul național de aplicare competent din țara dumneavoastră."
   },
   "language": {
     "en": "English",
