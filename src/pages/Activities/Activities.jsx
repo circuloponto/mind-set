@@ -31,7 +31,6 @@ const Activities = () => {
           <div className="activities-timeline">
             {activities.map((key, index) => {
               const paragraphs = t(`activities.${key}Text`).split('\n\n');
-              const list = t(`activities.${key}List`, { returnObjects: true });
               return (
                 <article key={key} className="activity-item">
                   <div className="activity-marker" aria-hidden="true">
@@ -42,13 +41,6 @@ const Activities = () => {
                     {paragraphs.map((paragraph, i) => (
                       <p key={i}>{paragraph}</p>
                     ))}
-                    {Array.isArray(list) && (
-                      <ul>
-                        {list.map((item, i) => (
-                          <li key={i}>{item}</li>
-                        ))}
-                      </ul>
-                    )}
                   </div>
                 </article>
               );
