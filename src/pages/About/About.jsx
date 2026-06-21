@@ -75,9 +75,7 @@ const About = () => {
               <div className="erasmus-item">
                 <strong>{t('about.action')}:</strong> {t('about.actionValue')}
               </div>
-              <div className="erasmus-item">
-                <strong>{t('about.focus')}:</strong> {t('about.focusValue')}
-              </div>
+              
             </div>
           </div>
         </div>

@@ -18,7 +18,7 @@ const Activities = () => {
 
       <section className="section" aria-labelledby="implementation">
         <div className="container">
-          <h2 id="implementation" className="section-heading">{t('activities.introTitle')}</h2>
+          <h2 id="implementation" className="section-heading"></h2>
           <div className="content-block">
             <p>{t('activities.introText')}</p>
           </div>
