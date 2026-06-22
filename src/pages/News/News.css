@@ -18,13 +18,9 @@
   margin-bottom: 0;
 }
 
-/* News slider */
-.news-slider-section {
-  padding: 2rem 1.5rem 0;
-}
-
-.news-slider-section .container {
-  max-width: 960px;
+/* News slider (inside the article, below the text) */
+.news-article__slider {
+  margin-top: 2rem;
 }
 
 .news-slider {
