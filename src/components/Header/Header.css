@@ -163,6 +163,7 @@
 @media (max-width: 1349px) {
   .header__container {
     padding: var(--space-3) var(--space-4);
+    gap: var(--space-3);
   }
 
   .header__menu-btn {
@@ -262,12 +263,28 @@
   }
 }
 
+@media (max-width: 768px) {
+  .header__container {
+    gap: var(--space-2);
+  }
+
+  .header__logo {
+    height: 30px;
+  }
+}
+
 @media (max-width: 480px) {
   .header__logo {
-    height: 36px;
+    height: 28px;
   }
 
   .header__nav {
     max-width: 100%;
+  }
+}
+
+@media (max-width: 360px) {
+  .header__logo {
+    height: 24px;
   }
 }
